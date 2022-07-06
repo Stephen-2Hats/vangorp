@@ -1,0 +1,179 @@
+// Footer styles
+.footer {
+    background: url("../img/footer-bg.webp") no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    @include mobile-lg() {
+        text-align: center;
+    }
+
+    .footer-top {
+        padding: rem(50) 0 rem(115);
+
+        @include desktop-sm() {
+            padding: rem(50) 0;
+        }
+
+        @include mobile-lg() {
+            padding: rem(40) 0;
+        }
+
+        .footer-block {
+            @include mobile-lg() {
+                margin-bottom: rem(20);
+            }
+
+            .img-fluid{
+                @include mobile-lg() {
+                    max-width: rem(150);
+                }
+            }
+
+            h3 {
+                margin-bottom: rem(15);
+                color: $white-color;
+
+                @include mobile-lg() {
+                    margin-bottom: rem(10);
+                }
+            }
+
+            ul {
+                li {
+                    display: block;
+                    margin-bottom: rem(8);
+                    color: $white-color;
+
+                    @include desktop-sm() {
+                        margin-bottom: 0;
+                    }
+
+
+
+                    a {
+                        font-family: $font-sub;
+                        color: $white-color;
+                        font-size: rem(16);
+                        line-height: rem(24);
+                        font-weight: 300;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+
+                        @include desktop-xs() {
+                            font-size: rem(14);
+                            line-height: rem(22);
+                        }
+                    }
+
+                    strong {
+                        @include desktop-xs() {
+                            font-size: rem(14);
+                            line-height: rem(22);
+                        }
+
+                        @include tablet-md() {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            address {
+                font-family: $font-sub;
+                font-weight: 300;
+                color: $white-color;
+
+
+                @include desktop-xs() {
+                    font-size: rem(14);
+                    line-height: rem(22);
+                    margin-bottom: rem(40);
+                }
+
+                @include mobile-lg() {
+                    margin-bottom: rem(10);
+                }
+
+
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: rem(10) 0;
+        border-top: 1px solid $white-color;
+
+        @include mobile-lg() {
+            text-align: center;
+        }
+
+        ul {
+            display: inline-block;
+            margin-bottom: rem(5);
+            padding-bottom: rem(5);
+            border-bottom: 1px solid $white-color;
+
+            li {
+                display: inline-block;
+                margin-right: rem(5);
+
+                a {
+                    font-family: $font-sub;
+                    font-weight: 700;
+                    font-size: rem(10);
+                    line-height: rem(20);
+                    color: $white-color;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+
+            }
+        }
+
+        p {
+            color: $white-color;
+            font-weight: 500;
+
+            @include tablet-md() {
+                font-size: rem(16);
+                line-height: rem(26);
+            }
+        }
+
+        .partners-list {
+            @include mobile-lg() {
+                margin-top: rem(10);
+            }
+
+            ul {
+                float: right;
+                border: 0;
+                padding: 0;
+                margin: 0;
+                padding-right: rem(85);
+
+                @include mobile-lg() {
+                    float: none;
+                    padding-right: 0;
+                }
+
+                li {
+                    margin-left: rem(15);
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.breadcrumb{
+    margin-bottom: rem(30);
+    li{
+        display: inline-block;
+       
+        a{
+            font-family: $font-sub;
+            font-size: rem(16);
+            line-height: rem(24);
+            color: $black-color;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            @include tablet-md() {
+                font-size: rem(14);
+                line-height: rem(16);
+            }
+
+            &:hover{
+                color:$secondary-color;
+            }
+        }
+
+        &.active{
+            color: $black-color;
+            font-weight: 700;
+        }
+
+        &:before{
+            color: $black-color;
+        }
+    }
+}

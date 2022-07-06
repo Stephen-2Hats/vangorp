@@ -1,0 +1,73 @@
+.btn {
+  outline: none;
+  border-radius: rem(5);
+  font-size: rem(16);
+  line-height: rem(19);
+  font-weight: 700;
+  box-shadow: none;
+  margin-top: rem(10);
+  font-family: $font-main;
+  text-transform: uppercase;
+
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: none;
+    outline: none;
+  }
+  &.primary-btn {
+    float: right;
+    padding: rem(5) rem(22);
+    background: $white-color;
+    color: $primary-color;
+    @include tablet-lg(){
+      padding: rem(8) rem(16);
+    }
+  } 
+}
+
+
+.cart-button {
+  display: inline-block;
+  font-family: $font-sub;
+  font-weight: 500;
+  color: $white-color;
+  font-size: rem(16);
+  line-height: rem(55);
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: $primary-color;
+  text-align: center;
+  padding: 0 rem(45);
+  margin: 0 rem(10);
+
+  @include desktop-xs() {
+    padding: 0 rem(15);
+    font-size: rem(14);
+    letter-spacing: rem(-1);
+  }
+
+  @include tablet-lg() {
+    margin-left: 0;
+    line-height: rem(40);
+  }
+
+
+
+  &:hover, 
+  &:active, 
+  &:focus {
+    background: $color1;
+    color: $white-color;
+  }
+
+  span {
+    margin-right: rem(10);
+    position: relative;
+    top: 2px;
+
+    @include desktop-xs() {
+      margin-right: rem(0);
+    }
+  }
+}

@@ -1,0 +1,112 @@
+ // Off canvas menu
+ .navbar-toggler {
+     @include tablet-md() {
+         display: none;
+     }
+ }
+
+ .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 999;
+     top: 0;
+     left: 0;
+     background: $light-color;
+     overflow-x: hidden;
+     transition: 0.3s all;
+     padding-top: 60px;
+
+     ul {
+         li {
+             display: block;
+             position: relative;
+
+             &.cc {
+                 &::after {
+                     content: url("../img/expand.svg");
+                     font-weight: 500;
+                     position: absolute;
+                     right: rem(20);
+                     top: rem(10);
+
+                 }
+             }
+
+
+             &.bb {
+                 &::after {
+                     content: url("../img/collapse.svg");
+                 }
+             }
+
+             a {
+                 display: block;
+                 font-family: $font-main;
+                 font-size: rem(15);
+                 line-height: rem(20);
+                 font-weight: bold;
+                 color: $color1;
+                 text-transform: uppercase;
+                 padding: rem(10);
+                 border-bottom: 1px solid $color2;
+             }
+
+             ul {
+                 padding-left: rem(15);
+                 display: none;
+
+                 &.aa {
+                     display: block;
+                 }
+
+                 li {
+                     &::after {
+                         display: none;
+                     }
+
+                     a {
+                         padding: rem(5);
+                         border-bottom: 0;
+                         font-weight: normal;
+
+                         &:hover {
+                             color: $white-color;
+                             background: $secondary-color;
+                         }
+                     }
+
+                     ul {
+                         display: block;
+
+                         li {
+                             a {
+                                 text-transform: capitalize;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+
+     .closebtn {
+         position: absolute;
+         top: rem(20);
+         right: rem(20);
+        
+
+         span{
+            color: $black-color;
+         }
+     }
+ }
+
+ .menu-open {
+     display: none;
+
+     @include tablet-md() {
+         display: inline-block;
+     }
+
+ }
