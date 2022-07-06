@@ -77,12 +77,7 @@ function app_js() {
         .pipe(gulp.dest('dist/assets/js'));
 }
 
-function swiper_js() {
-  return gulp.src('src/assets/js/swiper.js')
-      .pipe(include()).on('error', console.log)
-      .pipe(concat('swiper.min.js'))
-      .pipe(gulp.dest('dist/assets/js'));
-}
+
 
 function plugins_js() {
   return gulp.src('src/assets/js/plugins.js')
@@ -186,11 +181,10 @@ exports.app_css = app_css;
 exports.plugins_css = plugins_css;
 exports.app_js = app_js;
 exports.jquery_js = jquery_js;
-exports.swiper_js = swiper_js;
 exports.plugins_js = plugins_js;
 exports.modernizr_js = modernizr_js;
 exports.fonts = fonts;
 
 exports.del = del;
-exports.serve = gulp.parallel(html, ie_css, app_css, plugins_css, jquery_js, app_js, swiper_js, plugins_js, modernizr_js, fonts, img, uploads, img_webp, uploads_webp, watchFiles, serve);
-exports.default = gulp.series(del, html, ie_css, app_css, plugins_css, jquery_js, app_js, swiper_js, plugins_js, modernizr_js, fonts, img, uploads, img_webp, uploads_webp);
+exports.serve = gulp.parallel(html, ie_css, app_css, plugins_css, jquery_js, app_js, plugins_js, modernizr_js, fonts, img, uploads, img_webp, uploads_webp, watchFiles, serve);
+exports.default = gulp.series(del, html, ie_css, app_css, plugins_css, jquery_js, app_js, plugins_js, modernizr_js, fonts, img, uploads, img_webp, uploads_webp);

@@ -1,0 +1,92 @@
+// Sticky product block
+.sticky-prod-blk {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: $white-color;
+    display: none;
+    border-top: 1px solid $color1;
+    padding: rem(20) 0;
+    transition: 0.3s all;
+  
+    &.stky {
+      display: block;
+    }
+    
+    @include mobile-lg() {
+      padding: rem(10) 0;
+      display: none !important;
+    }
+  
+    p,
+    span,
+    strong {
+      @include mobile-lg() {
+        font-size: rem(14);
+      }
+    }
+  
+  
+  
+    .prod-blk-wrap {
+      display: flex;
+      justify-content: space-around;
+  
+      @media (min-width: 1620px) {
+        padding: 0 rem(100);
+      }
+  
+      @include mobile-lg() {
+        display: block;
+        text-align: center;
+      }
+  
+      .blk {
+        display: flex;
+        align-items: center;
+        margin: 0 rem(10);
+  
+        @include mobile-lg() {
+          display: block;
+          margin: 0 0 rem(5);
+        }
+  
+        &.main {
+          @include mobile-lg() {
+            display: flex;
+            justify-content: center;
+          }
+        }
+  
+        .quantity-outer {
+          @include mobile-lg() {
+            display: flex;
+            justify-content: center;
+          }
+        }
+  
+        .price {
+          margin-left: rem(10);
+  
+          span,
+          strong {
+            display: block;
+          }
+  
+          span {
+            color: $color3;
+          }
+        }
+  
+        .cart-button {
+          text-transform: uppercase;
+        }
+  
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }

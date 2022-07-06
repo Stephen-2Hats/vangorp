@@ -1,0 +1,49 @@
+
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  // bottom: -80px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  // margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+
+  opacity: 0;
+  visibility: hidden;
+
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.slick-prev {
+    left: 0;
+    right: auto;
+    z-index: 1;
+  
+    &:before {
+      content: url("../img/prev.svg");
+    }
+  }
+  
+  .slick-next {
+    left: auto;
+    right: 0;
+  
+    &:before {
+      content: url("../img/next.svg");
+    }
+  }
+

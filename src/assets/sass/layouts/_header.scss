@@ -338,6 +338,7 @@
 
                 .dropdown-menu-inner {
                     display: flex;
+
                     @include desktop-md() {
                         display: grid;
                         grid-template-columns: repeat(4, 1fr);
@@ -472,29 +473,5 @@
 }
 
 
-// Back to top
-.bktop {
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    cursor: pointer;
-    width: rem(40);
-    height: rem(40);
-    background: $secondary-color;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
 
-    &:hover {
-        background: $primary-color;
-    }
-}
 
-.bktop.show {
-    opacity: 1;
-    visibility: visible;
-}
