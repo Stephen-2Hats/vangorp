@@ -4,10 +4,17 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    margin-bottom: rem(96);
+
+    @include tablet-lg() {
+        margin-bottom: rem(91);
+    }
 
     @include mobile-lg() {
-        text-align: center;
+        margin-bottom:0;
     }
+
+
 
     .footer-top {
         padding: rem(50) 0 rem(115);
@@ -20,12 +27,20 @@
             padding: rem(40) 0;
         }
 
+        .col-md-3{
+            @include mobile-lg() {
+                width: 50% !important;
+            }
+        }
+
         .footer-block {
             @include mobile-lg() {
                 margin-bottom: rem(20);
             }
 
             .img-fluid{
+                max-width: 100%;
+                height: auto;
                 @include mobile-lg() {
                     max-width: rem(150);
                 }

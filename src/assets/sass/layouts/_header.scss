@@ -1,5 +1,5 @@
-.header{
-   
+.header {
+
     position: fixed;
     left: 0;
     right: 0;
@@ -194,6 +194,10 @@
     .navbar {
         padding: rem(20) 0;
 
+        @include tablet-lg() {
+            padding: rem(20) rem(10);
+        }
+
         .navbar-brand {
             padding: 0;
             margin-right: rem(65);
@@ -207,6 +211,8 @@
             }
 
             img {
+                max-width: 100%;
+                height: auto;
 
                 @include desktop-xs() {
                     width: rem(150)
@@ -254,11 +260,13 @@
 
                 &:nth-child(-n+5) {
                     .dropdown-menu {
-                        @include tablet-lg() {
-                            left: -250%;
+                        @include desktop-md() {
+                            left: -200%;
                         }
                     }
                 }
+
+
 
             }
 
@@ -266,12 +274,8 @@
                 border-radius: 0;
                 padding: 10px;
 
-                // @include tablet-lg() {
-                //     left: -250%;
-                // }
-
                 ul {
-                    // padding-right: rem(50);
+
                     width: 100%;
 
                     li {
@@ -334,6 +338,10 @@
 
                 .dropdown-menu-inner {
                     display: flex;
+                    @include desktop-md() {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                    }
                 }
             }
         }
@@ -421,9 +429,13 @@
 
         ul {
             li {
-
+                margin-right: rem(15);
                 display: inline-block;
                 position: relative;
+
+                &:last-child {
+                    margin-right: 0;
+                }
 
                 #target {
                     display: none;

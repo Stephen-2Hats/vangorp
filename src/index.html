@@ -6,6 +6,8 @@
   <section class="product-single">
     <div class="container">
       <partial src="breadcrumb.html"></partial>
+
+
       <div class="row">
         <!-- Product single left -->
         <div class="col-md-6">
@@ -17,33 +19,64 @@
                 <div class="slider-for-item">
 
                   <a href="assets/img/image10.webp" data-fancybox="items">
-                    <picture> <img src="assets/img/image10.webp" alt="Image"></picture>
+                    <!-- <picture> <img src="assets/img/image10.webp" alt="Image" loading="lazy" width="657" height="556"></picture> -->
+
+                    <picture>
+                      <source type="image/webp" srcset="assets/img/image10.webp" alt="Image" loading="lazy" width="657" height="556">
+                      <source type="image/jpeg" srcset="assets/img/image10.jpg" alt="Image" loading="lazy" width="657" height="556">
+                      <img src="assets/img/image10.jpg" alt="Image" loading="lazy" width="657" height="556">
+                    </picture>
 
                   </a>
                 </div>
                 <div class="slider-for-item">
 
                   <a href="assets/img/image11.webp" data-fancybox="items">
-                    <picture> <img src="assets/img/image11.webp" alt="Image"></picture>
+                    <!-- <picture> <img src="assets/img/image11.webp" alt="Image" loading="lazy" width="657" height="556"></picture> -->
+                    <picture>
+                      <source type="image/webp" srcset="assets/img/image11.webp" alt="Image" loading="lazy" width="657" height="556">
+                      <source type="image/jpeg" srcset="assets/img/image11.jpg" alt="Image" loading="lazy" width="657" height="556">
+                      <img src="assets/img/image11.jpg" alt="Image" loading="lazy" width="657" height="556">
+                    </picture>
                   </a>
                 </div>
                 <div class="slider-for-item">
 
                   <a href="assets/img/image12.webp" data-fancybox="items">
-                    <picture> <img src="assets/img/image12.webp" alt="Image"></picture>
+                    <!-- <picture> <img src="assets/img/image12.webp" alt="Image" loading="lazy" width="657" height="556"></picture> -->
+                    <picture>
+                      <source type="image/webp" srcset="assets/img/image12.webp" alt="Image" loading="lazy" width="657" height="556">
+                      <source type="image/jpeg" srcset="assets/img/image12.jpg" alt="Image" loading="lazy" width="657" height="556">
+                      <img src="assets/img/image12.jpg" alt="Image" loading="lazy" width="657" height="556">
+                    </picture>
                   </a>
                 </div>
               </div>
               <div class="slider-nav">
                 <div class="slider-nav-item">
-                  <picture> <img src="assets/img/image10-sml.webp" alt="Image"></picture>
+                  <!-- <picture> <img src="assets/img/image10-sml.webp" alt="Image" loading="lazy" width="163" height="110"></picture> -->
+                  <picture>
+                    <source type="image/webp" srcset="assets/img/image10-sml.webp" alt="Image" loading="lazy" width="163" height="110">
+                    <source type="image/jpeg" srcset="assets/img/image10-sml.jpg" alt="Image" loading="lazy" width="163" height="110">
+                    <img src="assets/img/image10-sml.jpg" alt="Image" loading="lazy" width="163" height="110">
+                  </picture>
 
                 </div>
                 <div class="slider-nav-item">
-                  <picture> <img src="assets/img/image11-sml.webp" alt="Image"></picture>
+                  <!-- <picture> <img src="assets/img/image11-sml.webp" alt="Image" loading="lazy" width="163" height="110"></picture> -->
+                  <picture>
+                    <source type="image/webp" srcset="assets/img/image11-sml.webp" alt="Image" loading="lazy" width="163" height="110">
+                    <source type="image/jpeg" srcset="assets/img/image11-sml.jpg" alt="Image" loading="lazy" width="163" height="110">
+                    <img src="assets/img/image11-sml.jpg" alt="Image" loading="lazy" width="163" height="110">
+                  </picture>
                 </div>
                 <div class="slider-nav-item">
-                  <picture> <img src="assets/img/image12-sml.webp" alt="Image"></picture>
+                  <!-- <picture> <img src="assets/img/image12-sml.webp" alt="Image" loading="lazy" width="163" height="110"></picture> -->
+                  <picture>
+                    <source type="image/webp" srcset="assets/img/image12-sml.webp" alt="Image" loading="lazy" width="163" height="110">
+                    <source type="image/jpeg" srcset="assets/img/image12-sml.jpg" alt="Image" loading="lazy" width="163" height="110">
+                    <img src="assets/img/image12-sml.jpg" alt="Image" loading="lazy" width="163" height="110">
+                  </picture>
                 </div>
               </div>
             </div>
@@ -54,14 +87,19 @@
                 <div class="col-6 col-md-6 col-lg-4">
                   <div class="product-block">
                     <a href="#">
-                      <picture><img src="assets/img/product-sml1.webp" alt="Product Image" class="prod-image"></picture>
+                      <!-- <picture><img src="assets/img/product-sml1.webp" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy"></picture> -->
+                      <picture>
+                        <source type="image/webp" srcset="assets/img/product-sml1.webp" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                        <source type="image/jpeg" srcset="assets/img/product-sml1.jpg" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                        <img src="assets/img/product-sml1.jpg" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                      </picture>
                       <h3>Roland RH-A7 Bk</h3>
                     </a>
                     <div class="product-txt">
                       <div class="price-txt">
                         <span>van: <del>108,-</del></span>
                         <strong>voor: 99,-</strong>
-                        <p><img src="assets/img/green-bars.svg" alt="Green Bars"> Direct leverbaar</p>
+                        <p><img src="assets/img/green-bars.svg" alt="Green Bars" width="22" height="11" loading="lazy"> Direct leverbaar</p>
                       </div>
                       <a href="#" class="cart-button"><span class="icon-cart-white"></span></a>
                     </div>
@@ -71,14 +109,19 @@
                 <div class="col-6 col-md-6 col-lg-4">
                   <div class="product-block">
                     <a href="#">
-                      <picture><img src="assets/img/product-sml2.webp" alt="Product Image" class="prod-image"></picture>
+                      <!-- <picture><img src="assets/img/product-sml2.webp" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy"></picture> -->
+                      <picture>
+                        <source type="image/webp" srcset="assets/img/product-sml2.webp" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                        <source type="image/jpeg" srcset="assets/img/product-sml2.jpg" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                        <img src="assets/img/product-sml2.jpg" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                      </picture>
                       <h3>Discacciati KD20-RW</h3>
                     </a>
                     <div class="product-txt">
                       <div class="price-txt">
                         <span>van: <del>165,-</del></span>
                         <strong>voor: 129,-</strong>
-                        <p><img src="assets/img/green-bars.svg" alt="Green Bars"> Direct leverbaar</p>
+                        <p><img src="assets/img/green-bars.svg" alt="Green Bars" width="22" height="11" loading="lazy"> Direct leverbaar</p>
                       </div>
                       <a href="#" class="cart-button"><span class="icon-cart-white"></span></a>
                     </div>
@@ -88,14 +131,19 @@
                 <div class="col-6 col-md-6 col-lg-4">
                   <div class="product-block">
                     <a href="#">
-                      <picture><img src="assets/img/product-sml3.webp" alt="Product Image" class="prod-image"></picture>
+                      <!-- <picture><img src="assets/img/product-sml3.webp" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy"></picture> -->
+                      <picture>
+                        <source type="image/webp" srcset="assets/img/product-sml3.webp" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                        <source type="image/jpeg" srcset="assets/img/product-sml3.jpg" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                        <img src="assets/img/product-sml3.jpg" alt="Product Image" class="prod-image" width="203" height="204" loading="lazy">
+                      </picture>
                       <h3>10 Rock Duets</h3>
                     </a>
                     <div class="product-txt">
                       <div class="price-txt">
                         <span><del></del></span>
                         <strong>voor: 18,-</strong>
-                        <p><img src="assets/img/green-bars.svg" alt="Green Bars"> Direct leverbaar</p>
+                        <p><img src="assets/img/green-bars.svg" alt="Green Bars" width="22" height="11" loading="lazy"> Direct leverbaar</p>
                       </div>
                       <a href="#" class="cart-button"><span class="icon-cart-white"></span></a>
                     </div>
@@ -136,16 +184,16 @@
               <!-- Quantity selection -->
               <div class="quantity-selection">
                 <div class="quantity">
-                  <a href="#" class="quantity__minus"><img src="./assets/img/minus.svg" alt="Minas Icon"></a>
+                  <a href="#" class="quantity__minus"><img src="./assets/img/minus.svg" alt="Minas Icon" width="17" height="4" loading="lazy"></a>
                   <input name="quantity" type="text" class="quantity__input" value="1">
-                  <a href="#" class="quantity__plus"><img src="./assets/img/plus.svg" alt="Plus Icon"></a>
+                  <a href="#" class="quantity__plus"><img src="./assets/img/plus.svg" alt="Plus Icon" width="17" height="16" loading="lazy"></a>
                 </div>
                 <a href="#" class="cart-button">
                   <span class="icon-cart-white"></span>
                   Toevoegen aan winkelwagen
                 </a>
                 <a href="#" class="cart-contact">
-                  <img src="./assets/img/message.svg" alt="Message Icon">
+                  <img src="./assets/img/message.svg" alt="Message Icon" width="59" height="58" loading="lazy">
 
                 </a>
               </div>
@@ -180,7 +228,7 @@
                     </ul>
                   </div>
 
-                  <picture> <img src="./assets/img/trustpilot.svg" alt="Trustpilot" class="img-fluid"></picture>
+                  <picture> <img src="./assets/img/trustpilot.svg" alt="Trustpilot" class="img-fluid" width="165" height="38" loading="lazy"></picture>
 
                 </div>
               </div>
@@ -219,7 +267,7 @@
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <div class="al-video-blk">
-                      <video id="video" poster="./assets/img/video-poster.webp">
+                      <video id="video" poster="./assets/img/video-poster.png">
                         <source src="./assets/img/test-video.mp4" type="video/mp4">
                       </video>
                       <button type="button" id="play_button" class="playBtn">
@@ -297,7 +345,12 @@
           <div class="prod-blk-wrap">
             <div class="blk main">
               <p>
-                <picture><img src="assets/img/image1.webp" alt="Image"></picture>
+                <!-- <picture><img src="assets/img/image1.webp" alt="Image"></picture> -->
+                <picture>
+                  <source type="image/webp" srcset="assets/img/image1.webp" alt="Image" width="55" height="38" loading="lazy">
+                  <source type="image/jpg" srcset="assets/img/image1.jpg" alt="Image" width="55" height="38" loading="lazy">
+                  <img src="assets/img/image1.jpg" alt="">
+                </picture>
                 Kawai CA-49 R
               </p>
               <div class="price">
@@ -309,9 +362,9 @@
             <div class="blk">
               <div class="quantity-outer">
                 <div class="quantity m-0">
-                  <a href="#" class="quantity__minus"><img src="./assets/img/minus.svg" alt="Minas Icon"></a>
+                  <a href="#" class="quantity__minus"><img src="./assets/img/minus.svg" alt="Minas Icon" width="17" height="4"></a>
                   <input name="quantity" type="text" class="quantity__input" value="1">
-                  <a href="#" class="quantity__plus"><img src="./assets/img/plus.svg" alt="Plus Icon"></a>
+                  <a href="#" class="quantity__plus"><img src="./assets/img/plus.svg" alt="Plus Icon" width="17" height="16"></a>
                 </div>
               </div>
             </div>

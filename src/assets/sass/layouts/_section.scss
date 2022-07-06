@@ -95,6 +95,12 @@ section {
       padding-top: 0;
     }
 
+    .cart-button{
+      span{
+        font-size: rem(20);
+      }
+    }
+
   }
 
 
@@ -116,6 +122,11 @@ section {
 
   .delivery-details {
     margin-bottom: rem(20);
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
 
     .delivery-item {
       display: flex;
@@ -414,6 +425,8 @@ section {
   outline: none;
   background-color: transparent;
   // margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
 
   opacity: 0;
   visibility: hidden;
@@ -456,7 +469,8 @@ section {
       cursor: pointer;
 
       img {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         opacity: 0.5;
       }
 
@@ -490,7 +504,8 @@ section {
     .slider-for-item {
 
       img {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         margin: 0 auto;
       }
     }
@@ -542,7 +557,8 @@ section {
     }
 
     .prod-image {
-      width: 100%;
+      max-width: 100%;
+      height: auto;
       margin-bottom: rem(20);
     }
 
@@ -594,6 +610,7 @@ section {
         }
 
         p {
+          display: flex;
           font-family: $font-sub;
           font-weight: 400;
           font-size: rem(12);
@@ -601,8 +618,11 @@ section {
           color: $primary-color;
           margin-bottom: 0;
 
+
           img {
             margin-right: rem(5);
+            max-width: 100%;
+            height: auto;
           }
         }
       }
@@ -633,8 +653,13 @@ section {
   padding: rem(20) 0;
   transition: 0.3s all;
 
+  &.stky {
+    display: block;
+  }
+  
   @include mobile-lg() {
     padding: rem(10) 0;
+    display: none !important;
   }
 
   p,
@@ -645,9 +670,7 @@ section {
     }
   }
 
-  &.stky {
-    display: block;
-  }
+
 
   .prod-blk-wrap {
     display: flex;

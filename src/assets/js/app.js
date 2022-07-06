@@ -81,12 +81,12 @@ $(window).scroll(function () {
   }
 });
 
-bttn.on('click', function (e) {
-  e.preventDefault();
-  $('html, body').animate({
-    scrollTop: 0
-  }, '300');
-});
+// bttn.on('click', function (e) {
+//   e.preventDefault();
+//   $('html, body').animate({
+//     scrollTop: 0
+//   }, '300');
+// });
 
 /**
  * Custom quantity input

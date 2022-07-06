@@ -29,6 +29,7 @@
                      position: absolute;
                      right: rem(20);
                      top: rem(10);
+                     cursor: pointer;
 
                  }
              }
@@ -37,6 +38,7 @@
              &.bb {
                  &::after {
                      content: url("../img/collapse.svg");
+                     cursor: pointer;
                  }
              }
 
@@ -94,16 +96,21 @@
          position: absolute;
          top: rem(20);
          right: rem(20);
-        
 
-         span{
-            color: $black-color;
+
+         span {
+             color: $black-color;
          }
      }
  }
 
  .menu-open {
      display: none;
+     cursor: pointer;
+
+     span {
+         font-size: rem(24)
+     }
 
      @include tablet-md() {
          display: inline-block;

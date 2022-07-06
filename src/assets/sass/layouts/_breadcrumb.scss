@@ -1,5 +1,10 @@
 .breadcrumb{
     margin-bottom: rem(30);
+    @include mobile-lg() {
+        margin-bottom: rem(0);
+    }
+
+
     li{
         display: inline-block;
        
