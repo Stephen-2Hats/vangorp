@@ -194,9 +194,9 @@
     .navbar {
         padding: rem(20) 0;
 
-        @include tablet-lg() {
-            padding: rem(20) rem(10);
-        }
+        // @include tablet-lg() {
+        //     padding: rem(20) rem(10);
+        // }
 
         .navbar-brand {
             padding: 0;
